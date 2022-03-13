@@ -1,0 +1,57 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true, // 每次保存自动格式化
+  "editor.tabSize": 2, // 换行默认以tab缩进 2个字符
+  // "editor.wordWrap": "on", // 控制折行方式 - "on" (根据视区宽度折行)
+  "editor.codeActionsOnSave": {
+    // 每次保存的时候将代码按eslint格式进行修复
+    "source.fixAll.eslint": false
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar"
+    // vue文件默认格式化方式 vetur
+    // "editor.defaultFormatter": "octref.vetur"
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    // javascript文件默认格式化方式:prettier
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    // json文件默认格式化方式prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    // json文件默认格式化方式prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    // css文件默认格式化方式prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    // typescript文件默认格式化方式prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //prettier文档规则 https://prettier.io/docs/en/options.html
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "html"],
+  "prettier.eslintIntegration": false, // prettier进行格式化时是否安装eslint配置去执行，建议false
+  "prettier.printWidth": 80, // 一行最多 120 字符
+  "prettier.tabWidth": 2, //指定每个缩进级别的空格数。
+  "prettier.useTabs": false, //是否使用制表符来缩进
+  "prettier.singleQuote": false, // 使用单引号
+  "prettier.semi": false, // 行尾需要有分号
+  "prettier.trailingComma": "none", // 末尾不需要逗号
+  "prettier.bracketSpacing": true, // 大括号内的首尾需要空格
+  "prettier.jsxBracketSameLine": false, // jsx 标签的反尖括号需要换行
+  "prettier.arrowParens": "avoid", //箭头函数参数周围可以不用括号
+  "prettier.endOfLine": "auto", //换行符的使用
+  "prettier.quoteProps": "as-needed", // 对象的 key 仅在必要时用引号
+  "prettier.jsxSingleQuote": false, // jsx 不使用单引号，而使用双引号
+  "prettier.rangeStart": 0, // 每个文件格式化的范围是文件的全部内容
+  "prettier.requirePragma": false, // 不需要写文件开头的 @prettier
+  "prettier.insertPragma": false, // 不需要自动在文件开头插入 @prettier
+  "prettier.proseWrap": "always", // 根据打印宽度决定是否折行 printWidth
+  "prettier.htmlWhitespaceSensitivity": "css" // 根据显示样式决定 html 要不要折行
+}
