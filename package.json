@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "amfe-flexible": "^2.2.1",
     "element-plus": "^2.1.0",
     "postcss-pxtorem": "^6.0.0",
     "sass": "^1.49.9",

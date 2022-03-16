@@ -1,7 +1,7 @@
 /*
  * @Author: 无聊的鬼_
  * @Date: 2022-03-13 09:02:50
- * @LastEditTime: 2022-03-13 19:32:27
+ * @LastEditTime: 2022-03-16 19:13:55
  * @Description:
  */
 import { createApp } from "vue"
@@ -11,7 +11,7 @@ import App from "./App.vue"
 import "@/style/index.css"
 
 /* screen */
-import "amfe-flexible"
+import "@/Plugins/boring_flexible.js"
 
 /* router */
 import router from "@/router/index"
