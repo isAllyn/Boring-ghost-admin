@@ -1,22 +1,23 @@
 <!--
  * @Author: 无聊的鬼_
  * @Date: 2022-03-13 18:37:59
- * @LastEditTime: 2022-03-16 22:09:41
+ * @LastEditTime: 2022-03-17 11:29:54
  * @Description: 
 -->
 <script setup lang='ts'>
 import header_com from './header/index.vue'
+import main_com from './main/index.vue'
 </script>
 
 <template>
   <el-container class="Layout_page">
-    <el-aside class="Aside bg-sidebar_hilight dark:bg-sidebar_dark">Aside</el-aside>
+    <el-aside class="Aside bg-sidebar_hilight dark:text-color_dark dark:bg-sidebar_dark">Aside</el-aside>
     <el-container>
-      <el-header class="Header bg-header_hilight dark:bg-header_dark">
+      <el-header class="Header bg-header_hilight dark:text-color_dark dark:bg-header_dark">
         <header_com></header_com>
       </el-header>
-      <el-main class="Main bg-main_hilight dark:bg-nain_dark">
-        <div class="box">main</div>
+      <el-main class="Main dark:text-color_dark bg-main_hilight dark:bg-nain_dark">
+        <main_com></main_com>
       </el-main>
     </el-container>
   </el-container>

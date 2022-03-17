@@ -1,7 +1,7 @@
 /*
  * @Author: 无聊的鬼_
  * @Date: 2022-03-16 19:10:42
- * @LastEditTime: 2022-03-17 10:41:15
+ * @LastEditTime: 2022-03-17 16:08:26
  * @Description:颜色管理
  */
 module.exports = {
@@ -17,8 +17,23 @@ module.exports = {
         main_hilight: "#f0f2f5", //main the hilight
         nain_dark: "#272727", //main the dark
         pop_hilight: "#3b5988", //pup the hilight
-        pop_dark: "#c8c8c9" //pup the dark
+        pop_dark: "#c8c8c9", //pup the dark
+        input_bg: "#f6f7f8" //input bg
+      },
+      textColor: {
+        color_dark: "#bebebe" //font color the dark
+      },
+      padding: {
+        fiexdPx_input: "8px" //input padding
+      },
+      borderRadius: {
+        radiu_input: "10px" //input radiu
       }
+    }
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["active"]
     }
   },
   plugins: []

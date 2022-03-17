@@ -24,5 +24,5 @@
   > 适配屏幕
 - vue-router@4
   > 路由
-- gsap
+- gsap & animate
   > 动画

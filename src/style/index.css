@@ -6,4 +6,7 @@
   .pup_dark {
     @apply bg-pop_hilight dark:bg-pop_dark text-white dark:text-black;
   }
+  .ghost_input {
+    @apply p-fiexdPx_input border-2 rounded-radiu_input border-gray-500 bg-input_bg focus:bg-white  outline-teal-600 text-slate-800;
+  }
 }
