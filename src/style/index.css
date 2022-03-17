@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .pup_dark {
+    @apply bg-pop_hilight dark:bg-pop_dark text-white dark:text-black;
+  }
+}

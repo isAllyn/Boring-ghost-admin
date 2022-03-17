@@ -1,7 +1,7 @@
 <!--
  * @Author: 无聊的鬼_
  * @Date: 2022-03-16 19:18:28
- * @LastEditTime: 2022-03-16 22:25:25
+ * @LastEditTime: 2022-03-17 10:56:54
  * @Description: hover show color
 -->
 <script setup lang='ts'>
@@ -45,6 +45,9 @@ onMounted(() => {
 <style scoped lang='scss'>
 .container {
   display: flex;
+  &:active .btn::before {
+    background-color: #010101;
+  }
 }
 .container .btn {
   overflow: hidden;
@@ -53,11 +56,12 @@ onMounted(() => {
   margin: 0 10px;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
-.container ::v-deep .fa {
+
+.container ::v-deep(.fa) {
   font-size: 38px;
   transform: scale(0.9);
   line-height: 90px;
-  transition: all 0.4s cubic-bezier(0.31, -0.1, 0.43, 1.59);
+  transition: all 0.2s cubic-bezier(0.31, -0.1, 0.43, 1.59);
 }
 .container .btn::before {
   content: "";
@@ -67,13 +71,13 @@ onMounted(() => {
   width: 120%;
   height: 120%;
   transform: rotate(45deg);
-  transition: all 0.4s cubic-bezier(0.31, -0.1, 0.43, 1.59);
+  transition: all 0.2s cubic-bezier(0.31, -0.1, 0.43, 1.59);
 }
 .container .btn:hover::before {
   top: -10%;
   left: -10%;
 }
-.container .btn:hover ::v-deep .fa {
+.container .btn:hover ::v-deep(.fa) {
   color: #fff;
   transform: scale(1);
 }

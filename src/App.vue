@@ -1,7 +1,7 @@
 <!--
  * @Author: 无聊的鬼_
  * @Date: 2022-03-13 09:02:50
- * @LastEditTime: 2022-03-13 19:34:14
+ * @LastEditTime: 2022-03-17 09:34:22
  * @Description: 
 -->
 <script setup lang="ts">
@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <div class="app_page bg-gray-300">
+  <div class="fiexdPx_app_page bg-gray-300">
     <router-view v-slot="{ Component }">
       <keep-alive>
         <component :is="Component" :key="$route.name" v-if="$route.meta.keepAlive" />
@@ -20,9 +20,10 @@
   </div>
 </template>
 <style lang="scss" scoped>
-.app_page {
-  min-width: 100vw;
+.fiexdPx_app_page {
+  min-width: 1024px;
   min-height: 100vh;
+  font-size: 16px;
 }
 </style>
 <style>

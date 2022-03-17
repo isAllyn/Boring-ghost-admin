@@ -1,7 +1,7 @@
 /*
  * @Author: 无聊的鬼_
  * @Date: 2022-03-13 11:44:52
- * @LastEditTime: 2022-03-16 19:14:21
+ * @LastEditTime: 2022-03-17 09:21:58
  * @Description:
  */
 module.exports = {
@@ -23,6 +23,7 @@ module.exports = {
         return file.indexOf("vant") !== -1 ? 37.5 : 80
       },
       propList: ["*"],
+      selectorBlackList: ["fiexdPx"],
       mediaQuery: false,
       minPixelValue: 6
       // exclude: /node_modules/i
