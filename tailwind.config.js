@@ -1,7 +1,7 @@
 /*
  * @Author: 无聊的鬼_
  * @Date: 2022-03-16 19:10:42
- * @LastEditTime: 2022-03-17 16:08:26
+ * @LastEditTime: 2022-03-18 13:29:24
  * @Description:颜色管理
  */
 module.exports = {
@@ -33,7 +33,10 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["active"]
+      backgroundColor: ["active", "hover", "focus"],
+      boxShadow: ["hover", "focus", "active"],
+      outline: ["focus"],
+      ringWidth: ["focus"]
     }
   },
   plugins: []
